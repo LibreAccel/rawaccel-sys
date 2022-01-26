@@ -1,0 +1,3 @@
+[submodule "rawaccel"]
+  path = rawaccel
+  url = git@github.com:LibreAccel/rawaccel.git

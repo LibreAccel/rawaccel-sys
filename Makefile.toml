@@ -1,0 +1,37 @@
+# ------------
+# | Wrappers |
+# ------------
+[tasks.fmt]
+command = "cargo"
+args = ["fmt"]
+
+[tasks.check]
+command = "cargo"
+args = ["check"]
+
+[tasks.clippy]
+command = "cargo"
+args = ["clippy"]
+
+[tasks.test]
+command = "cargo"
+args = ["test"]
+
+[tasks.bench]
+command = "cargo"
+args = ["bench"]
+
+# -------------
+# | Executors |
+# -------------
+[tasks.checkf]
+workspace = false
+dependencies = ["fmt", "check"]
+
+[tasks.checkfc]
+workspace = false
+dependencies = ["fmt", "check", "clippy"]
+
+[tasks.checkall]
+workspace = false
+dependencies = ["fmt", "check", "clippy", "test", "bench"]

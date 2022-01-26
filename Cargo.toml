@@ -1,0 +1,16 @@
+[package]
+name = "rawaccel-sys"
+version = "0.1.0"
+authors = ["Fuwn <contact@fuwn.me>", "a1xd <68629610+a1xd@users.noreply.github.com>"]
+edition = "2021"
+description = "⚙ Experimental bindings to the Raw Accel common library"
+homepage = "https://github.com/LibreAccel/rawaccel-sys"
+repository = "https://github.com/LibreAccel/rawaccel-sys"
+license = "MIT"
+publish = false
+
+[build-dependencies]
+cxx-build = "1.0.63"
+
+[dependencies]
+cxx = "1.0.63"
